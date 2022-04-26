@@ -14,8 +14,6 @@ return new class extends Migration
     public function up()
     {
         Schema::create('customer_details', function (Blueprint $table) {
-//            $table->id();
-//            $table->timestamps();
             $table->increments('id');
             $table->integer('customer_id')->unsigned()->comment('顧客id');
             $table->string('tel')->nullable()->comment('電話番号');
